@@ -1,0 +1,63 @@
+html,
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevents horizontal scrolling */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Remove padding from container on small screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group .form-control,
+    .input-group .btn {
+        width: 100%;
+        margin-right: 0;
+        border-radius: 4px !important;
+    }
+
+    .input-group .btn {
+        margin-top: 10px;
+    }
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+/* Override Bootstrap container if needed */
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

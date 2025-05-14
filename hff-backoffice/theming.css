@@ -1,0 +1,38 @@
+:root {
+    --bs-primary: #333154;
+    --bs-primary-rgb: 0, 120, 212;
+    --bs-secondary: #7FBCE9;
+    --bs-secondary-rgb: 80, 80, 80;
+    --bs-success: #107c10;
+    /* Green */
+    --bs-success-rgb: 16, 124, 16;
+    --bs-info: #00b7c3;
+    /* Teal */
+    --bs-info-rgb: 0, 183, 195;
+    --bs-warning: #ffb900;
+    /* Yellow */
+    --bs-warning-rgb: 255, 185, 0;
+    --bs-danger: #d13438;
+    /* Red */
+    --bs-danger-rgb: 209, 52, 56;
+    --bs-light: #f8f9fa;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark: #212529;
+    --bs-dark-rgb: 33, 37, 41;
+}
+
+/* Update button colors */
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-primary:hover {
+    background-color: #005a9e;
+    /* Darker shade for hover */
+    border-color: #005a9e;
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}

@@ -1,0 +1,20 @@
+.login-options {
+    margin-top: 20px;
+}
+
+.logout-form {
+    margin: 0;
+    padding: 0;
+}
+
+.logout-form .btn.nav-link {
+    background: none;
+    border: none;
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
