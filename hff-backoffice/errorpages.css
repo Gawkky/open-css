@@ -16,9 +16,12 @@
     color: #e74c3c;
 }
 
-.code403,
-.code400 {
+.code403 {
     color: #f39c12;
+}
+
+.code400 {
+    color: #3498db;
 }
 
 .error-message {
