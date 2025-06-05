@@ -1,0 +1,43 @@
+.error-container {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.error-code {
+    font-size: 120px;
+    font-weight: bold;
+    text-shadow: 2px 2px 0 #eee;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.code500,
+.code404 {
+    color: #e74c3c;
+}
+
+.code403,
+.code400 {
+    color: #f39c12;
+}
+
+.error-message {
+    font-size: 24px;
+    margin-bottom: 2rem;
+}
+
+.suggestions {
+    max-width: 500px;
+    margin: 0 auto 2rem;
+}
+
+@media (max-width: 767px) {
+
+    .error-code {
+        font-size: 80px;
+    }
+
+    .error-message {
+        font-size: 20px;
+    }
+}
