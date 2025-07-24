@@ -60,8 +60,101 @@ body {
     padding: 1.1rem 1rem;
 }
 
+.banner-image {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    padding-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Flex container */
 .flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+}
+
+.flex-image {
+    flex: 1;
+    padding-right: 1.25rem;
+    padding-bottom: 1.25rem;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-image a,
+.flex-image img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.flex-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-news {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.flex-news-item {
+    flex: 1;
+    min-width: 180px;
+    max-width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.flex-news-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.flex-news-item a {
+    text-decoration: none;
+}
+
+.news-item-title {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #333333;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.news-item-title a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.news-item-title a:hover {
+    text-decoration: underline;
+}
+
+.flex-footer {
     display: flex;
     flex-direction: row;
 }
@@ -170,11 +263,29 @@ h3,
 h4,
 h5,
 h6 {
-    color: #003399;
+    color: #AAC554;
     font-weight: 600;
     margin-bottom: 0.62rem;
-    margin-top: 0.62rem;
+    margin-top: 2.4rem;
 }
+
+h1 {
+    color: #333154;
+    line-height: 3rem;
+}
+
+h2,
+h3,
+h4 {
+    color: #7FBCE9;
+    line-height: 2rem;
+}
+
+h5,
+h6 {
+    color: #AAC554;
+}
+
 
 /* Paragraphs */
 p {
@@ -227,6 +338,14 @@ p {
         color: #aaaaaa !important;
     }
 
+    .news-item-title {
+        color: #f5f5f5 !important;
+    }
+
+    .news-item-title a {
+        color: #f5f5f5 !important;
+    }
+
     .unsubscribe a {
         color: #666666 !important;
     }
@@ -244,15 +363,59 @@ p {
     }
 }
 
-/* Mobile responsiveness */
 @media only screen and (max-width: 620px) {
     body {
         background-color: transparent !important;
     }
 
+    .flex-container {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .flex-image-border-wrapper {
+        flex: none !important;
+        width: 80% !important;
+        margin-bottom: 1rem;
+    }
+
+    .flex-image {
+        padding-right: 0.62rem !important;
+        padding-left: 0.62rem !important;
+        padding-bottom: 0.62rem !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .flex-image a,
+    .flex-image img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+        display: block;
+    }
+
+    .flex-text {
+        flex: none !important;
+        width: 90% !important;
+        padding-left: 0 !important;
+        text-align: center;
+    }
+
+    .flex-text p {
+        text-align: center !important;
+    }
+
+    .news-container {
+        display: none !important;
+    }
+
     .information {
         visibility: hidden !important;
         pointer-events: none !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     .information a {
@@ -274,6 +437,28 @@ p {
     }
 
     .tisfeest {
-        max-width: 25% !important;
+        max-width: 50% !important;
+        margin: 0 auto !important;
+    }
+
+    body {
+        font-size: 1rem !important;
+        line-height: 1.4 !important;
+    }
+
+    h1 {
+        line-height: 2.2rem !important;
+        font-size: 2rem !important;
+    }
+
+    h2,
+    h3,
+    h4 {
+        line-height: 1.6rem !important;
+        font-size: 1.5rem !important;
+    }
+
+    p {
+        margin-bottom: 0.8rem !important;
     }
 }

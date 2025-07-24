@@ -24,7 +24,20 @@ button {
     cursor: pointer;
 }
 
-/* Override Bootstrap container if needed */
+.card-hover {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-hover:hover .card-header {
+    background-color: var(--bs-primary) !important;
+}
+
 .container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -120,6 +133,10 @@ button {
 
 /* Remove padding from container on small screens */
 @media (max-width: 768px) {
+    body {
+        padding-top: 8.8rem !important;
+    }
+
     .container {
         max-width: 100%;
         padding: 10px;
