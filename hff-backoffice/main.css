@@ -209,3 +209,9 @@ button {
         margin-left: 16.67%;
     }
 }
+
+@media (min-width: 768px) {
+    .mobile-sidebar-toggle {
+        display: none !important;
+    }
+}
